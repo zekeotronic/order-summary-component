@@ -12,9 +12,15 @@
       property="og:description"
       content="Frontend Mentor - Order Summary Card | Newbie Challenge"
     />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/zekeotronic/order-summary-component/main/desktop-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://zekeotronic.github.io/order-summary-component/"
+    />
+    <meta property="og:type" content="website" />
     <link
       rel="icon"
       type="image/png"
@@ -31,38 +37,67 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body
-    class="h-screen flex flex-col justify-center items-center bg-mobile md:bg-desktop lg:bg-desktop bg-no-repeat bg-auto bg-top py-100px"
+    class="h-screen flex flex-col justify-center items-center bg-mobile md:bg-desktop lg:bg-desktop bg-no-repeat bg-cover bg-top"
   >
-    <div class="w-full h-full absolute bg-background/75 top-0 left-0"></div>
     <main
-      class="z-50 m-auto w-2/5 rounded-20 bg-white shadow-card font-body flex flex-col justify-center items-center text-center"
+      class="z-50 m-auto min-w-['327px'] w-4/5 md:w-450px rounded-20 bg-white shadow-card font-body flex flex-col justify-center items-center text-center"
     >
       <img
         src="./images/illustration-hero.svg"
         alt="hero illustration"
         class="w-full h-auto rounded-t-20"
       />
-      <div
-        class="flex flex-col justify-center items-center text-center px-24 py-8"
-      >
-        <p class="text-28px font-black">Order Summary</p>
-        <p class="w-4/5 leading-7">
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
+      <div class="flex flex-col justify-center items-center text-center p-8">
+        <p class="text-28px font-black mb-4">Order Summary</p>
+        <div class="flex justify-center items-center px-4">
+          <p class="w-4/5 text-faded-gray text-base leading-7 mb-5 text-center">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div
+          class="rounded-xl bg-plan p-6 w-11/12 flex items-center justify-between mb-8"
+        >
+          <div class="flex gap-5">
+            <img src="./images/icon-music.svg" alt="music icon" />
+            <div class="flex flex-col">
+              <p class="font-black">Annual Plan</p>
+              <p class="text-faded-gray">$59.99/year</p>
+            </div>
+          </div>
+          <p
+            class="text-link-blue font-bold text-sm underline cursor-pointer hover:text-hover-blue transition-colors"
+          >
+            Change
+          </p>
+        </div>
+        <div
+          class="rounded-xl p-6 w-11/12 flex items-center justify-center bg-link-blue hover:bg-hover-blue cursor-pointer transition-colors shadow-button mb-8"
+        >
+          <p class="text-white font-black text-sm">Proceed to Payment</p>
+        </div>
+        <p
+          class="mb-2 font-black text-sm text-faded-gray cursor-pointer hover:text-hover-dark transition-colors"
+        >
+          Cancel Order
         </p>
-        <p>Annual Plan</p>
-        <p>$59.99/year</p>
-        <p>Change</p>
-        <p>Proceed to Payment</p>
-        <p>Cancel Order</p>
       </div>
     </main>
-    <footer class="z-50">
+    <footer class="z-50 absolute bottom-0">
       <div class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="hover:text-hover-dark transition-colors"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a
+          class="hover:text-hover-dark transition-all hover:font-black"
+          href="https://github.com/zekeotronic/order-summary-component"
+          target="_blank"
+          >zekeotronic</a
+        >.
       </div>
     </footer>
   </body>
